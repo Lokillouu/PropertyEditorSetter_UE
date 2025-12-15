@@ -1,0 +1,58 @@
+Property Editor Setter License
+
+Copyright (c) 2025 Jorge David López Caraballo
+
+# Permissions #
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to:
+
+- Use the Software in any project, including commercial projects and games.
+- Modify the Software to suit their needs.
+- Distribute the Software as part of a larger project or game.
+- Sublicense the modified Software as part of a larger work.
+
+All of the above without payment of any royalties or fees.
+
+# Restrictions #
+
+The following restrictions apply:
+
+1. No Resale of Plugin: The Software, whether in original or modified form, may NOT be sold or resold.
+
+2. No Standalone Commercial Distribution: The Software may NOT be distributed as a commercial standalone product.
+
+3. Integration Only: The Software may only be distributed as an integrated component of a larger project (such as a game or application), not as a separate plugin or tool for sale.
+Non-commercial redistribution as a standalone plugin is permitted only under this same license.
+
+# Attribution Requirements #
+
+Source File Headers: All source files must retain the original copyright headers and attribution.
+
+Credit Notice: Projects using this Software must include the NOTICE.txt file somewhere within the project files.
+The name of the file can be altered to fit the Project needs as long as it starts with NOTICE (example: NOTICE_PropertyEditorSettings.txt).
+In-game credits are appreciated but not required.
+
+# Conditions #
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+# Summary #
+
+You CAN:
+- Use this in your commercial games/projects for free.
+- Modify the code however you want.
+- Ship your game with this plugin included.
+- Make money from games using this plugin.
+
+You CANNOT:
+- Sell this plugin anywhere.
+- Sell modified versions of this plugin.
+- Distribute this as a standalone product for money.
+
+You MUST:
+- Include credit to Jorge David López Caraballo in your game files and optionally in your game credits.
+- Keep copyright headers in source files.
+
+# Repository #
+
+Official Repository: https://github.com/Lokillouu/PropertyEditorSetter_UE

@@ -1,0 +1,4 @@
+This project uses Property Editor Setter
+Copyright (c) 2025 Jorge David López Caraballo
+https://github.com/Lokillouu
+Licensed under custom open-source license (see PropertyEditorSetter/LICENSE.txt)
