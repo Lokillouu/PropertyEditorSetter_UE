@@ -5,7 +5,7 @@
 #if (ENGINE_MAJOR_VERSION == 4 && ENGINE_MINOR_VERSION >= 27) || (ENGINE_MAJOR_VERSION == 5 && (ENGINE_MINOR_VERSION >= 0 && ENGINE_MINOR_VERSION < 5))
 #include "InstancedStruct.h"
 #elif ENGINE_MAJOR_VERSION == 5 && ENGINE_MINOR_VERSION >= 5
-#include "CoreUObject/InstancedStruct.h"
+#include "StructUtils/InstancedStruct.h"
 #endif
 
 /* NAMESPACE */
@@ -82,3 +82,4 @@ FProperty* UPropertyEditorSetterHelper::FindSurfaceProperty(UClass* OwnerClass, 
 	// Return the surface property.
 	return SurfaceProperty;
 }
+
