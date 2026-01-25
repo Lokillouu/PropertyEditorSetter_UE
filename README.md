@@ -6,7 +6,7 @@
 
 ## Problem Statement
 
-In Unreal Engine, properties can be marked with the `Setter` metadata specifier to define a setter function. However, **Unreal's property editor is inconsistent about invoking these setters**:
+In Unreal Engine, properties can be marked with the `Setter` specifier to define a setter function. However, **Unreal's property editor is inconsistent about invoking these setters**:
 
 - Some container types (certain arrays, maps, sets) may invoke setters.
 - Many property types **never invoke their setters** regardless of the metadata.
@@ -68,7 +68,7 @@ Allows excluding specific classes from automatic setter invocation:
 ## Use Example
 
 ```cpp
-UPROPERTY(EditAnywhere, meta = (Setter = "SetMyStruct"))
+UPROPERTY(EditAnywhere, Setter = "SetMyStruct")
 FMyStructure MyStruct;
 
 UFUNCTION(BlueprintCallable)
