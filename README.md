@@ -8,13 +8,13 @@
 
 In Unreal Engine, properties can be marked with the `Setter` specifier to define a setter function. However, **Unreal's property editor is inconsistent about invoking these setters**:
 
-- Some container types (certain arrays, maps, sets) may invoke setters.
-- Many property types **never invoke their setters** regardless of the metadata.
+- Some container types (arrays, maps, sets) may invoke setters.
+- Many property types **never invoke their setters**.
 - Even when supported, not all edit actions trigger setter calls.
 
 **There's no reliable pattern - it varies by property type and edit context.**
 
-This means that even though your `UPROPERTY` has valid `Setter` metadata, **the setter may never be called** when editing in the Details panel. This leads to:
+This means that even though your `UPROPERTY` has valid `Setter` specifier, **the setter may never be called** when editing in the Details panel. This leads to:
 - Validation logic being bypassed.
 - Dependent properties not updating.
 - Inconsistent object state.
@@ -36,7 +36,7 @@ The module provides **consistent, predictable setter invocation** across all pro
 
 ### Automatic Setter Invocation
 - Intercepts **all property edits** in the editor.
-- Manually calls setters for **any property type** with valid `Setter` metadata.
+- Manually calls setters for **any property type** with valid `Setter` specifier.
 - Works regardless of nesting (structs, instanced structs, containers, containers of containers, etc).
 - Works for **all edit actions** (direct edit, add, remove, reset to default, etc).
 
@@ -121,7 +121,7 @@ The build configuration automatically adjusts module dependencies based on engin
 ## Considerations
 
 - Only works in the editor (not at runtime).
-- Requires properties to have `Setter` metadata.
+- Requires properties to have `Setter` specifier.
 - Some performance overhead (allocates/deallocates temporary snapshots for each property edit, copies data a few times per edit). Not noticeable in most cases, but worth noting.
 
 ## Credits
